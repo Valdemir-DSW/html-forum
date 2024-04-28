@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum with Topics</title>
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+footer a {
+      color: white;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ff0000;
+}
+
+
+a {
+    color: #ff0000; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ff0000; 
+    background-color: #333; 
+    color: #fff;
+}
+
+input[type="submit"],
+button {
+    padding: 10px 20px;
+    background-color: #ff0000; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #cc0000; 
+}
+
+.topic {
+    border: 2px solid #ff0000; 
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.topic h3 {
+    margin-bottom: 10px;
+}
+
+
+.comment {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 2px solid #ff0000; 
+}
+
+
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Forum with Topics</h1>
+      
+        <form id="topicForm">
+            <input type="text" id="topicTitle" placeholder="Enter topic title">
+            <textarea id="topicContent" placeholder="Enter topic content"></textarea>
+            <button type="submit">Create Topic</button>
+        </form>
+       
+        <div id="topicsContainer"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Valdemir | <a href="https://github.com/Valdemir-DSW/html-forum">Script pegado Aqui </a></p>
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
